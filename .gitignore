@@ -1,0 +1,8 @@
+*.swp
+.DS_Store
+*.pyc
+*.egg-info/
+.coverage
+openvpn/gets3files
+gets3files/gets3files
+openvpn/AWS_ENV
