@@ -6,6 +6,17 @@ stored within an s3 bucket, and the actual container instance that is run within
 AWS is attached to an IAM profile which has read access to this s3 bucket.  This
 keeps the secrets out of this repository.
 
+# Variables needed
+
+Set the following shell variables to use the Rakefile:
+
+| Variable     | Example             | Usage                                                 |
+|:-------------|:--------------------|:------------------------------------------------------|
+| `AWS_ID`     | `123456789012`      | The account number, used by ECS container repository  |
+| `AWS_REGION` | `us-east-1`         | The AWS region you're using                           |
+| `S3_BUCKET`  | `my-awesome-bucket` | The S3 bucket that the openvpn credentials are stored |
+| `S3_DIR`     | `my/awesome/dir`    | The S3 directory that houses the openvpn crecentials  |
+
 # Container size
 
 An attempt was made to keep the container size as small as possible, thus alpine
