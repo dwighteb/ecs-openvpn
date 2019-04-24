@@ -113,4 +113,4 @@ namespace :spec do
 end
 
 desc 'Does all needed steps to deploy to aws'
-task :deploy_aws => ['docker:build_latest', 'spec:opevpn', 'docker:tag_aws', 'docker:push_aws']
+task :deploy_aws => ['docker:build_latest', 'spec:openvpn', 'docker:tag_aws', 'docker:push_aws']
